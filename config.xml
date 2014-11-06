@@ -2,7 +2,8 @@
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
 	id		= "GY86BP8AU6.GY86BP8AU6.com.lesmercenaires.notaires74"
-	version 	= "1.2.9">
+	version 	= "1.2.9"
+	versionCode = "200">
 
 	<name>Notaires des Savoie</name>
 	<preference name="phonegap-version" value="3.5.0" />
