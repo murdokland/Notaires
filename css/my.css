@@ -1,0 +1,312 @@
+.text-align-center {
+  text-align: center;
+}
+.text-align-right {
+  text-align: right;
+}
+
+/** CSS for non-standard jQuery Mobile styles or Codiqa components **/
+.split-wrapper {
+  width: 100%;
+  min-height: 200px;
+  clear: both;
+}
+@media all and (min-width: 650px) {
+	.content-secondary {
+		text-align: left;
+		float: left;
+		width: 45%;
+		background: none;
+		padding: 1.5em 6% 3em 0;
+		margin: 0;
+	}
+	.content-secondary {
+    background: none;
+    border-top: none;
+	}
+	.content-primary {
+		width: 45%;
+		float: right;
+		margin-right: 1%;
+		padding-right: 1%;
+	}
+	.content-primary ul:first-child {
+		margin-top: 0;
+	}
+  .content-secondary ul.ui-listview, .content-secondary ul.ui-listview-inset {
+    margin: 0;
+  }
+  .content-secondary ul.ui-listview .ui-li-divider, .content-secondary ul.ui-listview .ui-li {
+    border-radius: 0px;
+  }
+  .content-secondary ul.ui-listview .ui-li {
+    border-left: 0;
+    border-right: 0;
+  }
+	.content-secondary h2 {
+		position: absolute;
+		left: -9999px;
+	}
+	.content-secondary .ui-li-divider {
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+	.content-secondary {
+		margin: 0;
+		padding: 0;
+	}
+  
+}
+@media all and (min-width: 750px){
+	.content-secondary {
+		width: 34%;
+	}
+	.content-primary {
+		width: 60%;
+		padding-right: 1%;
+	}	
+  .content-secondary ul.ui-listview-inset {
+}
+}
+@media all and (min-width: 1200px){
+	.content-secondary {
+		width: 30%;
+		padding-right:6%;
+		margin: 0px 0 20px 5%;
+	}
+	.content-secondary ul {
+    margin: 0;
+  }
+	.content-secondary {
+		margin: 0;
+		padding: 0;
+	}
+	.content-primary {
+		width: 50%;
+		margin-right: 5%;
+		padding-right: 3%;
+	}
+	.content-primary {
+		width: 60%;
+	}
+}
+#fiche {
+	margin:10px;
+	
+}
+h1{
+	font-family: 'Raleway', cursive;
+	color:#007bbf;
+	font-size:20px;	
+}
+h2{
+	font-family: 'Raleway', cursive;
+	color:#782a42;	
+}
+/*.ui-icon-myapp-tel {
+	background-image: url("../images/tel.jpg");
+}*/
+
+.ui-li-desc {
+	font-size:16px;
+	
+}
+<!--actu-->
+code {
+	display: block;
+	padding: 10px;
+	font-size: 85%;
+	border: 1px solid #ccc;
+	background:  #f2f2f2;
+	margin-bottom: 5em;
+	white-space: pre;
+	overflow: auto;
+}
+
+/* Breite beschränken */
+div.limiter {
+	text-align: left;
+	width: 80%;
+	max-width: 69.23em;
+	padding: 1.2em 1.5em;
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+ul {
+	margin-bottom: 1em;
+}
+
+
+/* Listen */
+ul#news {
+	list-style:none;
+	text-align:left;
+	margin-left:0px;
+	padding-left:0px;
+	
+}
+
+/*ul#portfolio li img{
+	border: 1px solid #ccc;
+	padding: 4px;
+}
+
+
+.fade{
+	margin-bottom: 2em;
+}
+
+.fade p{
+	margin-bottom: 2em;
+	text-align: center;
+	width: 100%;
+	background: #fff;
+}*/
+
+
+/**** noscript-Hinweis ****/
+
+div#att {
+	background-color: #fffeb8;
+	border-bottom: 1px solid;
+	height: 2.5em;
+	line-height: 2.5em;
+	position: absolute;
+	top:0;
+	width: 100%;
+}
+
+div#att p{
+	background: transparent url(../images/att.png) no-repeat 0 46%;
+	margin: 0;
+	display: inline;
+	padding: 6px 0 6px 26px;
+}
+	
+.image_ombre{
+	box-shadow: 8px 8px 12px #aaa;
+	
+}
+
+#accueil{
+	background: #FFFFFF url('../images/background.jpg') no-repeat center bottom fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	margin:0;
+	padding:0;
+	
+	
+	
+	
+	background-image:url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-position:top;
+	background-position:center;
+	background-color:#FFFFFF;
+    background-size: cover;
+	min-height:685px;
+	padding: 15px;
+/*	background-image:url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-position:top;
+	background-position:center;
+	background-color:#FFFFFF;
+    background-size: cover;*/
+}
+#footer_actu {
+	background-color:#c7bdcc;
+	text-align:center;
+	font-size:18px;
+	border: 3px solid #2578bd;
+	box-shadow: 8px 8px 12px #aaa;
+	padding-left: 1.5em;
+	
+}
+.ui-grid-a{
+	text-align:center;	
+	
+}
+
+.ui-block-a {
+	margin-bottom:3%;
+	
+}
+
+.ui-field-contain .ui-controlgroup, .ui-field-contain fieldset.ui-controlgroup {
+	margin-bottom:20px;
+}
+#output_listing_agenda{
+	padding:10px;	
+}
+strong{
+	color:#007bbf;	
+}
+
+#output_listing_recherche{
+	margin-top:30px;
+	padding:10px;
+	
+}
+#resultat_calcul{
+	color:#007bbf;
+	font-size:24px;	
+}
+#resultat_calcul p{
+	color:#007bbf;
+	font-size:16px;	
+}
+
+.ui-li-heading {
+	white-space: normal;
+}
+.ui-li .ui-btn-text a.ui-link-inherit {
+	white-space: normal;
+}
+#savoie {
+	background-image:url(../images/savoie.jpg);
+	background-repeat: no-repeat;
+	background-position:top;
+	
+	width:100%;
+	height:294px;
+	margin:0 auto;
+	padding-top:20px;
+    
+}
+#hautesavoie {
+	background-image:url(../images/haute-savoie.jpg);
+	background-repeat: no-repeat;
+	background-position:top;
+	width:100%;
+	height:402px;
+	margin:0 auto;
+	margin-top:20px;
+	padding-top:20px;
+	/*background-size: auto;*/
+}
+#popupMap{
+	display:block
+}
+.gmap { height: 330px; width: 100%; margin: 0px; padding: 0px }
+
+
+@media all and (min-width: 641px){
+	#fiche2 {
+		width:50%;
+	}
+}
+@media all (min-width: 450px){
+	 .ui-field-contain .ui-controlgroup-label{
+		vertical-align: top;
+		display: inline-block;
+		width: 25%;
+		margin: 0 2% 0 0;
+	 }
+}
+
+

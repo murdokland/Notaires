@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns		= "http://www.w3.org/ns/widgets"
+	xmlns:gap	= "http://phonegap.com/ns/1.0"
+	id		= "GY86BP8AU6.GY86BP8AU6.com.lesmercenaires.notaires74"
+	version 	= "1.2.9">
+
+	<name>Notaires des Savoie</name>
+
+	<description>Annuaire Notaires des Savoie</description>
+
+	<author href="http://www.lesmercenaires.com" email="fabien@lesmercenaires.com">
+		Fabien Gravier
+	</author>
+
+	<gap:platforms>
+		<gap:platform name="android"/>
+	</gap:platforms>
+
+	<preference name="android-minSdkVersion" value="5" />
+	<preference name="stay-in-webview" value="false" />
+
+	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+	<feature name="http://api.phonegap.com/1.0/network"/>
+	<feature name="http://api.phonegap.com/1.0/file"/>
+	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+	
+	<icon src="icon.png" />
+	<icon src="icons/ios/icon.png" width="57" height="57" />
+	<icon src="icons/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
+	<icon src="icons/ios/icon_at_2x.png" width="114" height="114" />
+	<!-- retina iPad support: PhoneGap 2.5.0+ only -->
+	<icon src="icons/ios/icon-72_at_2x.png" gap:platform="ios" width="144" height="144" />
+	
+	
+	<icon src="icons/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
+	<icon src="icons/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+	<icon src="icons/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+	<icon src="icons/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+	
+	
+	<gap:splash src="splash.png" />
+	<gap:splash src="splash/ios/Default.png" width="320" height="480" />
+	<gap:splash src="splash/ios/Default_at_2x.png" width="640" height="960" />
+	<gap:splash src="splash/ios/Default-Landscape.png" width="1024" height="768" />
+	<gap:splash src="splash/ios/Default-Portrait.png" width="768" height="1024" />
+
+	<gap:splash src="splash/ios/Default_iphone5.png" gap:platform="ios" width="640" height="1136" />
+	
+	<!-- retina iPad support: PhoneGap 2.5.0+ only -->
+	<gap:splash src="splash/ios/Default-Landscape_at_2x.png" gap:platform="ios" width="2048" height="1496" />
+	<gap:splash src="splash/ios/Default-Portrait_at_2x.png" gap:platform="ios" width="1536" height="2008" />
+	
+	<gap:splash src="splash/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
+	<gap:splash src="splash/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+	<gap:splash src="splash/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+	<gap:splash src="splash/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+	
+	
+	<access origin="*" />
+	<preference name="disable-cursor" value="true" />
+
+</widget>

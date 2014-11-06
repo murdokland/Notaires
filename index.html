@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title></title>
+        <link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
+        <link rel="stylesheet" href="css/my.css" />
+        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.mobile-1.2.0.min.js"></script>
+        <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <script src="js/my.js"></script>
+    <style>
+	#page1, #page2, #page3,  #page4,  #page5,  #page6,  #page7,  #page8,  #page9, #head1 {
+		/*width:568px;*/
+	}
+
+	.ui-header-fixed, .ui-footer-fixed {
+		/*left: 0;
+		right: 0;
+		width:568px;
+		position: fixed;
+		z-index: 1000;*/
+	}
+	#accueil {
+		/* décommenter css #accueil cover*/
+	}
+	.gmap { height: 330px; width:568px;; margin: 0px; padding: 0px }
+	</style>
+    </head>
+    <body>
+        
+        <div data-role="page" id="page1">
+            <div data-role="content" id="accueil">
+            	<div style="margin:0 auto; text-align:center">
+                	<img src="images/interdepartementale.jpg" width="60%"><br>
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a"><a href="statique.html#page1" data-transition="slide" rel="external"><img src="images/chambre.jpg" border="0" class="image_ombre" width="70%"/></a></div>
+                    <div class="ui-block-b"><a href="#page2" data-transition="slide"><img src="images/annuaire.jpg" border="0" class="image_ombre" width="70%"/></a></div>
+                    <div class="ui-block-a"><a href="#page7" data-transition="slide" rel="external"><img src="images/agenda.jpg" border="0" class="image_ombre" width="70%"/></a></div>
+                    <div class="ui-block-b"><a href="statique.html#page2" data-transition="slide" rel="external"><img src="images/immobilier.jpg" border="0" class="image_ombre" width="70%"/></a></div>
+                    <div class="ui-block-a"><a href="#page8" data-transition="slide" rel="external"><img src="images/frais.jpg" border="0" class="image_ombre" width="70%"/></a></div>
+                    <div class="ui-block-b"><a href="statique.html#page3" data-transition="slide" rel="external"><img src="images/notariat.jpg" border="0" class="image_ombre" width="70%"/></a></div>
+                </div>
+                <div id="footer_actu">
+                	<h1 style="text-align:left; font-size:22px; margin-top:2%; padding:0">L'ACTU</h1>
+                	<ul id="news">
+           			</ul>
+                </div>
+            </div>
+        </div>
+        <!--2-->
+        <div data-role="page" id="page2">
+            <div data-theme="b" data-role="header" data-id="head1" data-position="fixed">
+            	<a href="#page1" data-role="button" data-transition="fade"  data-icon="home" data-iconpos="notext"></a>
+                <a href="#page9" data-role="button" data-transition="fade"  data-icon="search"  class="ui-btn-right" data-iconpos="notext"></a>
+                <h3>ANNUAIRE</h3>
+            </div>
+            <div data-role="content" style="padding: 15px">
+            	<div style="text-align:center">
+                	<h1>Sûrement et pour longtemps, les Notaires de Savoie <br>et de Haute-Savoie sont à vos côtés…</h1>
+                    <div id="savoie">
+                    	<a href="#page3" data-transition="slide" data-role="button" data-transition="fade" data-inline="true">SAVOIE</a><br><br>
+                    </div>
+                </div>
+                <div style="text-align:center">
+                	<div id="hautesavoie">
+                    	<a href="#page4" data-transition="slide" data-role="button" data-transition="fade" data-inline="true">HAUTE-SAVOIE</a><br><br>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!--3-->
+        <div data-role="page" id="page3">
+            <div data-theme="b" data-role="header" data-id="head1" data-position="fixed">
+                <a href="#page1" data-role="button" data-transition="fade"  data-icon="home" data-iconpos="notext"></a>
+                <a href="#page9" data-role="button" data-transition="fade"  data-icon="search"  class="ui-btn-right" data-iconpos="notext"></a>
+                <h3>SAVOIE</h3>
+            </div>
+            <div data-role="content" style="padding: 15px">
+            	<a href="" data-role="button" data-transition="fade" data-inline="true" data-rel="back">< Retour</a>
+                <ul data-role="listview" data-divider-theme="c" data-inset="true" id="d73" >
+                 
+                </ul>
+            </div>
+        </div>
+        <!--4-->
+        <div data-role="page" id="page4">
+            <div data-theme="b" data-role="header" data-id="head1" data-position="fixed">
+                <a href="#page1" data-role="button" data-transition="fade"  data-icon="home" data-iconpos="notext"></a>
+                <a href="#page9" data-role="button" data-transition="fade"  data-icon="search"  class="ui-btn-right" data-iconpos="notext"></a>
+                <h3>HAUTE-SAVOIE</h3>
+            </div>
+            <div data-role="content" style="padding: 15px">
+            	<a href="" data-role="button" data-transition="fade" data-inline="true" data-rel="back">< Retour</a>
+                <ul data-role="listview" data-divider-theme="c" data-inset="true" id="d74" >
+                 
+                </ul>
+            </div>
+        </div>
+        <!--5-->
+        <div data-role="page" id="page5">
+            <div data-theme="b" data-role="header" data-id="head1" data-position="fixed">
+                <a href="#page1" data-role="button" data-transition="fade"  data-icon="home" data-iconpos="notext"></a>
+                <a href="#page9" data-role="button" data-transition="fade"  data-icon="search"  class="ui-btn-right" data-iconpos="notext"></a>
+                <h3>RESULTATS</h3>
+            </div>
+            <div data-role="content" style="padding: 15px">
+            	<a href="" data-role="button" data-transition="fade" data-inline="true" data-rel="back">< Retour</a>
+            	<ul data-role="listview" data-divider-theme="c" data-inset="true" id="output_listing_ville" >
+                 
+                </ul>    
+            </div>
+        </div>
+         <!--6-->
+        <div data-role="page" id="page6">
+        	<div data-theme="b" data-role="header" data-id="head1" data-position="fixed">
+                <a href="#page1" data-role="button" data-transition="fade"  data-icon="home" data-iconpos="notext"></a>
+                <a href="#page9" data-role="button" data-transition="fade"  data-icon="search"  class="ui-btn-right" data-iconpos="notext"></a>
+                <h3>FICHE</h3>
+            </div>
+            
+            <div data-role="content" style="padding: 15px" data-dom-cache="true">
+            	<a href="" data-role="button" data-transition="fade" data-inline="true" data-rel="back">< Retour</a>	
+            	<div data-role="listview" id="fiche">
+                
+                </div>
+                   
+            </div>
+        </div>
+        <div data-role="page" class="page-map" id="lamap" >
+            <div data-theme="b" data-role="header" data-id="head1" data-position="fixed">
+                <a href="index.html" data-role="button" data-transition="fade"  data-icon="home" data-iconpos="notext" rel="external"></a>
+                <a href="index.html#page9" data-role="button" data-transition="fade"  data-icon="search"  class="ui-btn-right" data-iconpos="notext" rel="external"></a>
+                <h3>CARTE</h3>
+            </div>
+            <div data-role="content">
+                <a href="" data-role="button" data-transition="fade" data-inline="true" data-direction="reverse" data-rel="back">< Retour</a>	
+               <!-- <a href="#" data-role="button" data-transition="fade" data-inline="true"  onClick="retour()">< Retour</a>	-->
+                <div id="map" class="gmap"></div>
+            </div>
+		</div>
+        <div data-role="page" id="page7">
+        	<div data-theme="b" data-role="header" data-id="head1" data-position="fixed">
+                <a href="#page1" data-role="button" data-transition="fade"  data-icon="home" data-iconpos="notext"></a>
+                <h3>AGENDA</h3>
+                
+            </div>
+            <div data-role="content" style="padding: 15px">
+            	<h1>Les Notaires des Savoie sont présents, n'hésitez pas à les consulter !</h1><br>
+            	<div id="agenda" data-role="listview" >
+                 	<ul data-role="listview" data-divider-theme="c" data-inset="true" id="output_listing_agenda" >
+                     	
+                	</ul>
+                </div>    
+            </div>
+        </div>
+        <div data-role="page" id="page8">
+        	<div data-theme="b" data-role="header" data-id="head1" data-position="fixed">
+                <a href="#page1" data-role="button" data-transition="fade"  data-icon="home" data-iconpos="notext"></a>
+                <h3>Calcul de frais</h3>
+            </div>
+            <div data-role="content" style="padding: 15px">
+            	<h1>En un clic, faites un calcul rapide et estimatif des frais liés à votre achat immobilier</h1> 
+            	<div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup"><br>
+                        <label class="ui-controlgroup-label">Type d'achat:</label>
+                        <input type="radio" name="choix" id="checkbox-1a" value="neuf" />
+                        <label for="checkbox-1a">Logement neuf</label>
+                        <input type="radio" name="choix" id="checkbox-2a" value="ancien" />
+                        <label for="checkbox-2a">Logement ancien</label>
+                    </fieldset>
+                    <fieldset data-role="controlgroup">
+                        <label class="ui-controlgroup-label">Montant en euros HT:</label><br>
+                        <input type="text" name="montant"/>
+                    </fieldset>
+                    <input  type="submit" onClick="calcul()" value="Calcul" >
+                  </div>
+                  <div id="resultat_calcul">
+                  
+                  </div>
+                  
+   
+            </div>
+        </div>
+        <div data-role="page" id="page9">
+        	<div data-theme="b" data-role="header" data-id="head1" data-position="fixed">
+                <a href="#page1" data-role="button" data-transition="fade"  data-icon="home" data-iconpos="notext"></a>
+                <h3>RECHERCHE</h3>
+                
+            </div>
+            <div data-role="content" style="padding: 15px">
+            	  Saisissez au moins un champ:<br>
+                  <div data-role="fieldcontain">
+                    <form data-ajax="false" method="get" id="formrecherche">
+                        <fieldset> 
+                        <input type="text" name="nom" id="textinput" value="" placeholder="Nom"  />
+                        <!--<input type="text" name="ville" id="textinput2" value="" placeholder="Ville"   />-->
+                        <br><br>
+                        <input type="submit"  value="Validez" />
+                        </fieldset>
+                     </form>
+                  </div>
+                  <div id="recherche" data-role="listview" >
+                 	<ul data-role="listview" data-divider-theme="c" data-inset="true" id="output_listing_recherche" >
+                     	
+                	</ul>
+                   	
+                </div>   
+                </div>    
+            </div>
+        </div>
+    </body>
+</html>
